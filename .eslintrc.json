@@ -1,0 +1,18 @@
+{
+    "root": true,
+    "parserOptions": {
+        "project": "tsconfig.json"
+    },
+    "plugins": ["@thebahaifaith/eslint-plugin", "eslint-plugin-next-on-pages"],
+    "extends": [
+        "next/core-web-vitals",
+        "next/typescript",
+        "plugin:@thebahaifaith/react-recommended",
+        "plugin:eslint-plugin-next-on-pages/recommended"
+    ],
+    "rules": {
+        "comma-dangle": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-curly-newline": "off"
+    }
+}

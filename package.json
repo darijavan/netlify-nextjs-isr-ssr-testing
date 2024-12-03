@@ -1,0 +1,49 @@
+{
+    "name": "news.bahai.org-v3",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "type-check": "tsc --noEmit",
+        "prettier": "prettier --write .",
+        "test": "vitest",
+        "pages:build": "pnpx @cloudflare/next-on-pages",
+        "preview": "pnpm run pages:build && wrangler pages dev",
+        "deploy": "pnpm run pages:build && wrangler pages deploy"
+    },
+    "dependencies": {
+        "@emotion/cache": "^11.13.1",
+        "@emotion/react": "^11.13.3",
+        "@emotion/styled": "^11.13.0",
+        "next": "14.2.10",
+        "next-intl": "^3.19.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@cloudflare/next-on-pages": "^1.13.2",
+        "@testing-library/jest-dom": "^6.5.0",
+        "@testing-library/react": "^16.0.1",
+        "@testing-library/user-event": "^14.5.2",
+        "@thebahaifaith/eslint-plugin": "^1.14.1",
+        "@tsconfig/next": "^2.0.3",
+        "@types/node": "^20.16.5",
+        "@types/react": "^18.3.5",
+        "@types/react-dom": "^18.3.0",
+        "eslint": "^8.57.0",
+        "eslint-config-next": "14.2.9",
+        "jsdom": "^25.0.0",
+        "prettier": "^3.3.3",
+        "typescript": "5.3.3",
+        "vite-tsconfig-paths": "^5.0.1",
+        "vitest": "^2.0.5",
+        "wrangler": "^3.78.3"
+    },
+    "engines": {
+        "node": "^18.18"
+    },
+    "packageManager": "pnpm@9.10.0"
+}
